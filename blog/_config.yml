@@ -99,8 +99,8 @@ theme: landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: 'git'
-  repo: git@github.com:fanson1024/blog.git
+  repo: git@github.com:ftt1024/blog.git
   branch: master
   message: Bemy blog
-  name: fanson1024
+  name: ftt1024
   emial: fanson1024@sina.com
