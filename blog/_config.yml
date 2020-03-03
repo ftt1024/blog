@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.fttily.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -98,9 +98,5 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: 'git'
-  repo: git@github.com:ftt1024/blog.git
-  branch: master
-  message: Bemy blog
-  name: ftt1024
-  emial: fanson1024@sina.com
+  type: git
+  repo: https://github.com/ftt1024/blog.git
