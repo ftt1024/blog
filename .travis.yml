@@ -8,6 +8,10 @@ branches:
     - master # build master branch only
 script:
   - hexo generate # generate static files
+after_script:
+  - git add .
+  - git commit -m "Update"
+  - git push --force --quiet "https://${GH_TOKEN}@github.com/ftt1024/ftt1024.github.io.git" master:master
 deploy:
   provider: pages
   github-token: $GH_TOKEN
