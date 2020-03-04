@@ -9,9 +9,12 @@ branches:
 script:
   - hexo generate # generate static files
 after_script:
-  - git add package-lock.json
-  - git commit -m "Update"
-  - git push #--force --quiet "https://${GH_TOKEN}@github.com/ftt1024/ftt1024.github.io.git" master:master
+  - cd ./public
+  - git init
+  - git config user.name "ftt1024"
+  - git add .
+  - git commit -m"Update"
+  - git push --force --quiet "https://${GH_TOKEN}@github.com/ftt1024/ftt1024.github.io.git" master:master
 deploy:
   provider: pages
   github-token: $GH_TOKEN
